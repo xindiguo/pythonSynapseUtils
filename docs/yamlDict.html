@@ -87,8 +87,42 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="yaml-file">
-<h1>Yaml File<a class="headerlink" href="#yaml-file" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-pythonSynapseUtils.annotationsYaml">
+<span id="yaml-file"></span><h1>Yaml File<a class="headerlink" href="#module-pythonSynapseUtils.annotationsYaml" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pythonSynapseUtils.annotationsYaml.checkAgainstDict">
+<code class="descclassname">pythonSynapseUtils.annotationsYaml.</code><code class="descname">checkAgainstDict</code><span class="sig-paren">(</span><em>annotDictSynID</em>, <em>project</em>, <em>syn</em><span class="sig-paren">)</span><a class="headerlink" href="#pythonSynapseUtils.annotationsYaml.checkAgainstDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares annotations in use against dictionary.</p>
+<p>Gets all annotation keys and values in use in a project and compares against those specified by a dictionary. Prints non-matching terms.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pythonSynapseUtils.annotationsYaml.correctAnnot">
+<code class="descclassname">pythonSynapseUtils.annotationsYaml.</code><code class="descname">correctAnnot</code><span class="sig-paren">(</span><em>correctionsFile</em>, <em>project</em>, <em>syn</em><span class="sig-paren">)</span><a class="headerlink" href="#pythonSynapseUtils.annotationsYaml.correctAnnot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Propagates annotation changes based on tab-delimited input.</p>
+<p>Given a tab-separated file containing annotations to be updated, changes annotations across a project. File contains one line per key-value pair, if line has two entries, they are assumed to be oldKey and newKey, if three entries, they are assumed to be key, oldValue, newValue.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pythonSynapseUtils.annotationsYaml.countPerAnnot">
+<code class="descclassname">pythonSynapseUtils.annotationsYaml.</code><code class="descname">countPerAnnot</code><span class="sig-paren">(</span><em>annotDictSynID</em>, <em>project</em>, <em>syn</em>, <em>grouping=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pythonSynapseUtils.annotationsYaml.countPerAnnot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Counts instances of key-value pairs.</p>
+<p>Counts number of items annotated to each key-value pair in the given dictionary within the given project.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pythonSynapseUtils.annotationsYaml.countQueryResults">
+<code class="descclassname">pythonSynapseUtils.annotationsYaml.</code><code class="descname">countQueryResults</code><span class="sig-paren">(</span><em>sql</em>, <em>syn</em><span class="sig-paren">)</span><a class="headerlink" href="#pythonSynapseUtils.annotationsYaml.countQueryResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Counts number of entities returned by a query.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pythonSynapseUtils.annotationsYaml.updateKey">
+<code class="descclassname">pythonSynapseUtils.annotationsYaml.</code><code class="descname">updateKey</code><span class="sig-paren">(</span><em>oldKey</em>, <em>newKey</em>, <em>inAnnot</em><span class="sig-paren">)</span><a class="headerlink" href="#pythonSynapseUtils.annotationsYaml.updateKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces oldKey with newKey.</p>
+<p>Given a dictionary, replaces oldKey with newKey, keeping any existing value assigned to that term.</p>
+</dd></dl>
+
 </div>
 
 
